@@ -1,0 +1,13 @@
+Bibliografia utilizada: 
+
+Para el slider se tomo el ejemplo de la página:
+
+https://www.w3schools.com/howto/howto_js_slideshow.asp
+
+Para el formulario: 
+
+https://www.w3schools.com/howto/howto_css_contact_form.asp
+
+Para colocar el input tipo date para seleccionar la fecha dentro del formulario:
+
+https://www.anerbarrena.com/date-input-html5-2829/

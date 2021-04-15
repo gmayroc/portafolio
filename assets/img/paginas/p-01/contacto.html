@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <html lang="es">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos.css" rel="stylesheet">
+    <title>Belleza Oriental | Salón de Belleza</title>
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+            <div id="logo">
+                <img src="logot.png" alt="Logo de Belleza Oriental" id="logo">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+            <section id="contacto">
+
+                <article>
+                    <h3>Belleza Oriental</h3><br>
+                    <p><b>Horario de Apertura:</b> De 10.00 am a 6:00 pm</p><br>
+                    <p><b>Dirección:</b>Av. Alirio Ugarte Pelayo. Cc. Monagas Plazas. Maturín - Monagas</p><br>
+                    <p><b>Teléfono:</b>+58 414 613 47 21</p><br>
+                    <p><b>Correo:</b>bellezaoriental@gmail.com</p><br>
+
+                </article>
+                <aside id="formulario">
+                    <h3>Contacta con nosotros</h3>
+                    <div class="container">
+                        <form action="action_page.php">
+
+                            <label for="fname">Nombre</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Nombre">
+                            <label for="lname">Correo</label>
+                            <input type="mail" id="mail" name="mail" placeholder="Correo">
+                            <label for="fecha">Fecha de su preferencia</label>
+                            <input type="date" id="fecha" name="fecha" placeholder="Fecha tentativa" min="2020-01-01" max="2020-12-31" value="<?php echo date("Y-m-d");?>"/><br>
+                            <br><label for="subject">Servicio</label>
+                            <textarea id="subject" name="subject" placeholder="Servicio a solicitar" style="height:100px"></textarea>
+                            <input type="submit" value="Enviar">
+                            </form>
+                            </div>
+                </aside>
+            </section>
+
+            <footer>
+                <div id="logof">
+                    <p><img src="logof.png" alt="logo"/></p><br>
+                    <p id="iconos"><a href="www.instagram.com"><img src="instagram.png" alt="instagram"/></a> <a href="www.facebook.com"><img src="facebook.png" alt="facebook"/></a></p>
+                </div>
+                <div id="donde">
+                    <h1>¿Donde estamos ubicados?</h1>
+                    <ul>
+                        <li><p>Belleza Oriental | Salón de Belleza</p>
+                        <p>Cc. Monagas Plazas - Maturín, Estado Monagas</p><li>
+                        <li><p>LLamanos para concertar una cita:</p>
+                        <p>Tel. +58 414 613 47 21</p><li>
+                    </ul>
+                </div>
+
+                <div id="derechos">
+                    <p>&copy; 2020 Belleza Oriental</p>
+                </div>
+            </footer>
+
+
+</div>
+
+    <script type="text/javascript" src="js.js"></script>
+</body>
+</html>

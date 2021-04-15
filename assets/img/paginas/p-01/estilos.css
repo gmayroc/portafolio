@@ -1,0 +1,713 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #666;
+  background-color: #fff;
+}
+
+#contenedor {
+    margin: auto;
+}
+
+h1{
+  color: #333;
+}
+
+/* Encabezado */
+
+#logo {
+	width:40%;
+	margin:auto;
+	text-align: center;
+	position: relative;
+	padding-top:5px;
+	padding-bottom:10px;
+}
+
+/* Navegación */
+
+nav
+{
+    display: inline-block;
+    width: 900px;
+    text-align: right;
+    padding-top:10px;
+    padding-bottom: 20px;
+}
+
+nav ul
+{
+    list-style-type: none;
+}
+
+nav li
+{
+    display: inline-block;
+    margin-right: 15px;
+    float: none;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #ff0d97;
+    border-bottom: 3px solid #ff0d97;
+}
+
+/*Slider*/
+* {box-sizing:border-box}
+
+/* Contenedor de slider*/
+.slideshow-container {
+  width: 1400px;
+  height: 400px;
+  margin:auto;
+  position:relative;
+  padding:0;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #000000;
+  font-size: 50px;
+  padding: 50px;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  text-align: center;
+  line-height : 50px;
+  background: rgba(255, 13, 151, 0.5);
+
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Cuerpo */
+
+#especialidad ul {
+    list-style-type: none;
+    margin-bottom: 60px;
+}
+
+#especialidad li {
+    display: inline-block;
+    margin-right: 40px;
+    margin-left: 45px;
+    float: none;
+}
+
+#especialidad h1{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    color: #000000;
+  	font-size: 2.5em;
+    font-weight: normal;
+}
+
+#especialidad h3{
+    text-align: center;
+    margin-top: 15px;
+    color: #000000;
+  	font-size: 20px;
+}
+
+#especialidad img {
+    border-radius: 100px;
+    width: 90%;
+    text-align: center;
+}
+
+#especialidad img:hover
+{
+    color: #ff0d97;
+    border-bottom: 3px solid #ff0d97;
+}
+
+
+article, aside
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+article
+{
+    width: 800px;
+    margin-left: 45px;
+    margin-right: 20px;
+}
+
+article p
+{
+    font-size: 1.2em;
+    color: #000000;
+}
+
+
+aside
+{
+    position: relative;
+    width: 450px;
+    background-color: #ff0d97;
+    box-shadow: 0px 2px 5px #706b64;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    font-size: 0.9em;
+    margin-bottom: 90px;
+    margin-top: 40px;
+}
+
+aside h3
+{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+  	font-size: 2.5em;
+    font-weight: bold;
+}
+
+
+/*Formulario*/
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+}
+input[type=mail], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px;
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Pie de página */
+
+footer
+{
+    background-color: black;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+footer p, footer ul
+{
+    font-size: 1em;
+    color: white;
+
+}
+
+footer h1
+{
+    font-size: 2em;
+    margin-bottom:10px;
+    color: #ff0d97;
+
+}
+
+#logof, #donde
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#logof
+{
+    width: 45%;
+    margin-left:40px;
+    margin-right: 40px;
+    margin:auto;
+	text-align: center;
+	position: relative;
+	padding-top:5px;
+	padding-bottom:40px;
+
+}
+
+#iconos img
+{
+    width: 40px;
+    margin-left:40px;
+    margin-right: 40px;
+    margin-top: 10px;
+	text-align: center;
+	position: relative;
+	padding-top:1px;
+	padding-bottom:0px;
+
+}
+
+
+#donde{
+    width: 50%;
+    margin-left:40px;
+    margin-right: 40px;
+    margin:auto;
+	text-align: center;
+	position: relative;
+	padding-top:50px;
+	padding-bottom:40px;
+}
+
+
+
+#donde ul
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    width: 48%;
+    padding-left: 2px;
+    list-style-type: none;
+}
+
+#derechos{
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: center;
+}
+
+/*Fin de Inicio*/
+
+
+
+/*nosotros*/
+
+#nosotros{
+	margin-top: 40px;
+} 
+*Slider*/
+* {box-sizing:border-box}
+
+/* Contenedor de slider*/
+.slideshow-container-nosotros {
+  width: 600px;
+  height: 500px;
+  margin:auto;
+  position:relative;
+  padding:0;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.10s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#nosotros article, aside
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+#nosotros article
+{
+    width: 500px;
+    margin-left: 45px;
+    margin-right: 20px;
+}
+
+#nosotros article p
+{
+    font-size: 1.2em;
+    color: #000000;
+}
+
+#nosotros article h3
+{
+    font-size: 2em;
+    color: #ff0d97;
+}
+
+#slide
+{
+    position: relative;
+    width: 700px;
+    height: 500px;
+    background-color: transparent;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    color: transparente;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-bottom: 100px;
+}
+
+#slide img:hover
+{
+    color: #ff0d97;
+    border-bottom: 3px solid #ff0d97;
+}
+
+#info ul{
+	padding-left: 20px;
+}
+
+/*Servicios*/
+
+#banner{
+    width: 100%;
+    margin-left:40px;
+    margin-right: 40px;
+    margin:auto;
+	text-align: center;
+	position: relative;
+	padding-top:5px;
+	padding-bottom:10px;
+}
+
+#servicios ul {
+    list-style-type: none;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#servicios li {
+    display: inline-block;
+    margin-right: 40px;
+    margin-left: 45px;
+    float: none;
+    text-align: center;
+}
+
+
+#servicios p{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+    color: #000000;
+  	font-size: 1.5em;
+    font-weight: normal;
+    padding: 40px;
+}
+
+#servicios h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #000000;
+  	font-size: 2.5em;
+    font-weight: normal;
+}
+
+#servicios h3{
+    text-align: center;
+    margin-top: 15px;
+    color: #000000;
+  	font-size: 20px;
+}
+#servicios h4{
+    text-align: center;
+    margin-top: 10px;
+    color: #000000;
+  	font-size: 15px;
+  	font-weight: normal;
+}
+
+#servicios img {
+    border-radius: 100px;
+    width: 80%;
+    text-align: center;
+}
+
+#servicios img:hover
+{
+    color: #ff0d97;
+    border-bottom: 3px solid #ff0d97;
+}
+
+
+#mensaje article, aside
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+#mensaje
+{
+    width: 800px;
+    margin-left: 45px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+#mensaje p
+{
+    font-size: 1.2em;
+    color: #000000;
+    text-align: justify;
+    margin-right: 40px;
+    margin-left: 40px;
+    font-weight: normal;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+   
+}
+
+#mensaje h3{
+	text-align: center;
+    margin-top: 15px;
+    color: #000000;
+  	font-size: 20px;
+}
+
+#columna
+{
+    position: relative;
+    width: 450px;
+    background-color: white;
+    box-shadow: 0px 2px 5px;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    font-size: 0.9em;
+    margin-bottom: 90px;
+    margin-top: 40px;
+}
+
+#columna img{
+	width: 100%;
+	height: 100%;
+}
+
+/*Contacto*/
+
+#contacto{
+	margin-top: 30px;
+	margin-bottom:30px;
+}
+#contacto article, aside
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+#contacto article
+{
+    margin-top: 50px;
+    width: 500px;
+    margin-left: 45px;
+    margin-right: 20px;
+}
+
+#contacto article h3
+{
+    text-align: center;
+    margin-bottom: 20px;
+  	font-size: 2.5em;
+    font-weight: bold;
+    color:black;
+}
+
+#contacto p
+{
+    font-size: 1.2em;
+    color: #000000;
+}
+
+
+#formulario
+{
+    position: relative;
+    width: 700px;
+    background-color: #f2f2f2;
+    box-shadow: 0px 2px 5px #706b64;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    font-size: 0.9em;
+    margin-bottom: 90px;
+    margin-top: 40px;
+}
+
+#formulario h3
+{
+    text-align: center;
+    margin-bottom: 20px;
+  	font-size: 2.5em;
+    font-weight: bold;
+    color:black;
+}
+
+#formulario label
+{
+    color: black;
+}

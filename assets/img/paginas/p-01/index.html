@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<!--Bibliografia utilizada: 
+Para el slider se tomo el ejemplo de la página https://www.w3schools.com/howto/howto_js_slideshow.asp
+Para el formulario: https://www.w3schools.com/howto/howto_css_contact_form.asp
+Para colocar el input tipo date para seleccionar la fecha dentro del formulario: https://www.anerbarrena.com/date-input-html5-2829/
+
+-->
+<html>
+<head>
+    <html lang="es">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="estilos.css" rel="stylesheet">
+    <title>Belleza Oriental | Salón de Belleza</title>
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+            <div id="logo">
+                <img src="logot.png" alt="Logo de Belleza Oriental" id="logo">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="1.png" style="width:100%">
+            <div class="text">Obten un look único y exclusivo. Este es el lugar correcto.</div>
+        </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="2.png" style="width:100%">
+            <div class="text">En Belleza Oriental cuidamos de tu piel, salud y belleza.</div>
+            </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="3.png" style="width:100%">
+            <div class="text">Aprovecha nuestros packs y ofertas.</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <section id="especialidad">
+
+                <h1>Somos especialistas en amplios servicios para el cuidado de tu piel y belleza.</h1>
+                <ul>
+                    <li>
+                        <i><img src="4.jpg"></i>
+                        <h3>Pedicura</h3>
+                    </li>
+                    <li>
+                        <i><img src="5.jpg"></i>
+                        <h3>Maquillaje</h3>
+                    </li>
+                    <li>
+                        <i><img src="6.jpg"></i>
+                        <h3>Manicura</h3>
+                    </li>
+                </ul>
+
+                <ul class"servi">
+                    <li>
+                        <i><img src="8.jpg"></i>
+                        <h3>Limpieza Facial</h3>
+                    </li>
+                    <li>
+                        <i><img src="7.jpg"></i>
+                        <h3>Tratamientos Corporales</h3>
+                    </li>
+                    <li>
+                        <i><img src="9.jpg"></i>
+                        <h3>Depilación</h3>
+                    </li>
+                </ul>
+
+                <article>
+                    <h3>7 Razones para ir al Salón de Belleza</h3><br>
+                    <p><b>1.   Hacer un seguimiento a tu cabello:</b> Tanto si lo llevas largo o corto, una visita a la peluquería te ayudara a lucir un peinado cuidado durante cualquier época del año. </p><br>
+                    <p><b>2.   Una experiencia relajante:</b> Aunque tu agenda este apretada, busca tiempo para disfrutar con tranquilidad de tu rutina en el salón de belleza.</p><br>
+                    <p><b>3.   Leer revistas de modas y belleza:</b> Mientras esperas tu turno en la peluquería puedes disfrutar de la lectura de las mejores revistas del mercado y ponerte al dia de las tendencias. </p><br>
+                    <p><b>4.   Recibir asesoría profesional:</b> Al acudir al salón de belleza recibes el asesoramiento del experto que puede orientarte para decidir cuál es el corte de cabello que más te favorece, el tipo de cejas adecuada a tu cara. Este asesoramienyo tambien te aporta autoestima para cuidarte y verte guapa ante el espejo.</p><br>
+                    <p><b>5.   Cuidar tu cabello:</b> Los peluqueros trabajan con productos capilares de mucha calidad que miman tu cabello. Por esta razón, un tratamiento profesional también es un beneficio para la salud de tu melena.</p><br>
+                    <p><b>6.   Iniciar una nueva etapa:</b> Si te encuentras en un momento de tu vida de cambio personal, entonces, un cambio de imagen puede ser un anclaje terapéutico para marcar este punto de inflexión en tu presente. </p><br>
+                    <p><b>7.   Experiencia de Bienestar:</b> No existe una razón más positiva para ir a la peluquería que activar el nivel de bienestar que sientes cuando te cuidas y te dedicas el tiempo que realmente mereces. </p><br>
+
+                </article>
+                <aside>
+                    <h3>Pide tu cita</h3>
+                    <div class="container">
+                        <form action="action_page.php">
+
+                            <label for="fname">Nombre</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Nombre">
+                            <label for="lname">Correo</label>
+                            <input type="mail" id="mail" name="mail" placeholder="Correo">
+                            <label for="fecha">Fecha de su preferencia</label>
+                            <input type="date" id="fecha" name="fecha" placeholder="Fecha tentativa" min="2020-01-01" max="2020-12-31" value="<?php echo date("Y-m-d");?>"/><br>
+                            <br><label for="subject">Servicio</label>
+                            <textarea id="subject" name="subject" placeholder="Servicio a solicitar" style="height:100px"></textarea>
+                            <input type="submit" value="Enviar">
+                            </form>
+                            </div>
+                </aside>
+            </section>
+
+            <footer>
+                <div id="logof">
+                    <p><img src="logof.png" alt="logo"/></p><br>
+                    <p id="iconos"><a href="www.instagram.com"><img src="instagram.png" alt="instagram"/></a> <a href="www.facebook.com"><img src="facebook.png" alt="facebook"/></a></p>
+                </div>
+                <div id="donde">
+                    <h1>¿Donde estamos ubicados?</h1>
+                    <ul>
+                        <li><p>Belleza Oriental | Salón de Belleza</p>
+                        <p>Cc. Monagas Plazas - Maturín, Estado Monagas</p><li>
+                        <li><p>LLamanos para concertar una cita:</p>
+                        <p>Tel. +58 414 613 47 21</p><li>
+                    </ul>
+                </div>
+
+                <div id="derechos">
+                    <p>&copy; 2020 Belleza Oriental</p>
+                </div>
+            </footer>
+
+
+</div>
+
+    <script type="text/javascript" src="js.js"></script>
+</body>
+</html>
